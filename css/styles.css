@@ -1,0 +1,147 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Sweetsans";
+  src: url(../assets/fonts/sweetsansproexlight-webfont.woff) format("woff");
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+
+body {
+  width: 80%;
+  height: 100vh;
+  padding-left: 20%;
+  box-sizing: border-box;
+}
+
+* {
+  font-family: "Playfair Display", serif;
+}
+
+div#titles {
+  padding-bottom: 2%;
+  width: 100%;
+  text-align: center;
+}
+
+h1#title {
+  font-size: 50px;
+  margin-bottom: -5px;
+  min-width: 400px;
+  letter-spacing: 8px;
+  font-family: "Josefin Slab", serif;
+}
+
+h2#subtitle {
+  font-weight: 300;
+  font-size: 15px;
+  padding-left: 245px;
+  min-width: 300px;
+  letter-spacing: 1.5px;
+}
+
+img.social {
+  width: 20px;
+  display: inline-block;
+
+  padding-top: 10px;
+  margin-right: 17px;
+}
+
+#sites {
+  text-align: center;
+}
+
+ul#sites li {
+  font-family: "Sweetsans";
+  display: inline;
+  margin-right: 20px;
+  border-bottom: 1px solid black;
+}
+
+li a {
+  font-family: "Sweetsans";
+}
+#grid {
+  text-align: center;
+}
+#gridItems img {
+  width: 29%;
+  height: auto;
+  min-width: 200px;
+}
+
+#footer {
+  float: right;
+  padding-right: 3.5%;
+  height: 50px;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+.image {
+  transition: 1s;
+}
+
+.image:hover {
+  transform: scale(1.1);
+}
+
+.volver {
+  float: left;
+  padding: 3%;
+}
+
+#social {
+  padding-top: 20%;
+}
+
+@media only screen and (max-width: 680px) {
+  body {
+    width: 100%;
+    padding-left: 0;
+    min-width: 465px;
+  }
+  h1#title {
+    font-size: 50px;
+    margin-bottom: -5px;
+    min-width: 0px;
+  }
+  h2#subtitle {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  img.social {
+    padding-top: 0;
+    margin-right: 0;
+    padding-left: 5px;
+  }
+
+  ul#sites li {
+    margin-right: 0;
+  }
+
+  #grid {
+    text-align: center;
+  }
+
+  #gridItems img {
+    width: 100%;
+  }
+
+  ul#sites li {
+    font-size: 25px;
+    margin-right: 50px;
+  }
+}
